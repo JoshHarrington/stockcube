@@ -1,10 +1,10 @@
 # Site settings
-title:       ChantyMarie.com
-email:       chanty@chantymarie.com
-author:      Chantelle Bradley
-description: "One blog to rule them all"
+title:       StockCub.es
+email:       josh@joshharrington.co.uk
+author:      Josh Harrington
+description: "One web app to rule them all"
 baseurl:     ""
-url:         "http://chantymarie.com"
+url:         "http://stockcub.es"
 date_format: "%b %-d, %Y"
 
 # Google analytics
