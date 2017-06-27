@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+                
+        There's no game here, leave now or forever hold your peace.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button onclick="notagame()">Don't press me, please. No seriously, don't even think about it.</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="theBox" style="border:1px solid black;visibility:collapse;height:100px;width:100px;">
+        </div>
+
+
+        <script>
+
+        var showBox = function(){
+            document.getElementById("theBox").style.visibility = "visible";
+        };
+
+        var notagame = function(){
+
+            var user = prompt("Are you human? Respond with YARP or NARP").toUpperCase();
+
+            switch(user){
+                case ('YARP'):
+                    var mathTest = prompt("Wow, you\'re so convincing.... :wink: \n\nWhat's 2 + 2 then buddy?!");
+                    var schoolTest = prompt("You like Math then? YES or NO").toUpperCase();
+                    if (mathTest=='4' && schoolTest=='YES'){
+                        showBox();
+                        alert('You\'re way to skilled and enthusiastic to be a human! Get in the box');
+                    } else if(mathTest=='4' || schoolTest=='YES') {
+                        alert('You failed, that\'s a standard human passtime, walk free my friend!');
+                    }
+                    break;
+                case ('NARP'):
+                    alert('Only a human would say that, you can pass');
+                    break;
+                case ('YES'):
+                    showBox();
+                    alert('You sound too robotic for me, get in the box.');
+                    break;
+                default:
+                    alert('Only a human could confused me as much as you just have, walk on!'); 
+            }
+        }
+        </script>
+
+    </body>
+</html>
